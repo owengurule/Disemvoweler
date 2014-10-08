@@ -19,16 +19,16 @@ namespace Disemvoweler
 
                 Console.ReadKey();
         }
-        //create a function called Disemvoweler that takes a string parameter called "input" and prints a disemvoweled string.
+        //created a function called Disemvoweler that takes a string parameter called "input" and prints a disemvoweled string.
         static void Disemvoweler (string input)
         {
-            //created two string vaariabls output and vowel
+            //created two string variabals output and vowel
             string output = "";
             string vowel = "";
-            
+            //created for loop that counts through each string character, with an if statement that finds letters that aren't vowels to add to your output
             for (int i = 0; i < input.Length; i++)
             {
-                if (" aeiou".Contains(input[i])) 
+                if (" bcdfghjklmnpqrstvwxyz!?.,;:".Contains(input[i])) 
                 {
 
                     output = output + input[i];
@@ -39,6 +39,7 @@ namespace Disemvoweler
                     
                 }
             }
+            //printed results to the console
             //original
             Console.WriteLine("Original" + input);
             //disemvoweled
